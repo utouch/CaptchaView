@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CaptchaView">
+        <attr name="number" format="integer"/>
+        <attr name="android:textColor"/>
+        <attr name="android:textSize"/>
+        <attr name="textWidth" format="dimension|reference"/>
+        <attr name="textHeight" format="dimension|reference"/>
+        <attr name="android:gravity"/>
+        <!--间隔-->
+        <attr name="dividerWidth" format="dimension|reference"/>
+        <!--是否有焦点背景-->
+        <attr name="hasFocusBackground" format="boolean"/>
+        <!--有焦点时输入框背景-->
+        <attr name="focusBackground" format="reference"/>
+        <!--无焦点时输入框背景-->
+        <attr name="unFocusBackground" format="reference"/>
+        <attr name="passwordTransformation" format="string"/>
+        <attr name="inputType" format="enum">
+            <enum name="number" value="0"/>
+            <enum name="text" value="1"/>
+            <enum name="numberText" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>

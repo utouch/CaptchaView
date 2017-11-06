@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lable="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="inputType = number"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"/>
+
+        <com.captcha.CaptchaView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            lable:dividerWidth="5dp"
+            lable:inputType="number"
+            lable:number="4"
+            lable:textHeight="56dp"
+            lable:textWidth="56dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="inputType = numberPassword"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"/>
+
+        <com.captcha.CaptchaView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            lable:dividerWidth="25dp"
+            lable:inputType="number"
+            lable:number="4"
+            lable:passwordTransformation="＊"
+            lable:textHeight="56dp"
+            lable:textWidth="56dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="inputType = text"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"/>
+
+        <com.captcha.CaptchaView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp"
+            lable:dividerWidth="5dp"
+            lable:focusBackground="@drawable/bg_edit_focus"
+            lable:hasFocusBackground="true"
+            lable:inputType="text"
+            lable:number="4"
+            lable:textHeight="56dp"
+            lable:textWidth="56dp"
+            lable:unFocusBackground="@drawable/bg_edit_un_focus"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="inputType = textPassword"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"/>
+
+        <com.captcha.CaptchaView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp"
+            lable:dividerWidth="5dp"
+            lable:focusBackground="@drawable/bg_edit_focus"
+            lable:hasFocusBackground="true"
+            lable:inputType="text"
+            lable:number="5"
+            lable:passwordTransformation="●"
+            lable:textHeight="56dp"
+            lable:textWidth="56dp"
+            lable:unFocusBackground="@drawable/bg_edit_un_focus"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="inputType = numberNumber"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"/>
+
+        <com.captcha.CaptchaView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            lable:dividerWidth="5dp"
+            lable:focusBackground="@drawable/bg_edit_focus"
+            lable:hasFocusBackground="true"
+            lable:inputType="numberText"
+            lable:number="6"
+            lable:textHeight="56dp"
+            lable:textWidth="56dp"
+            lable:unFocusBackground="@drawable/bg_edit_un_focus"/>
+
+        <com.captcha.CaptchaView
+            android:id="@+id/captchaView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            lable:textHeight="56dp"
+            lable:textWidth="56dp"/>
+    </LinearLayout>
+</ScrollView>
