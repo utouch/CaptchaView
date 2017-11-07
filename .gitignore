@@ -58,3 +58,5 @@ com_crashlytics_export_strings.xml
 
 # bintray
 ＃bintray.gradle
+libray/libray.iml
+app/app.iml

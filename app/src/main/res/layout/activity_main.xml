@@ -116,7 +116,13 @@
             lable:textHeight="56dp"
             lable:textWidth="56dp"
             lable:unFocusBackground="@drawable/bg_edit_un_focus"/>
-
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="只能输入*1234@"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"/>
         <com.captcha.CaptchaView
             android:id="@+id/captchaView"
             android:layout_width="match_parent"
