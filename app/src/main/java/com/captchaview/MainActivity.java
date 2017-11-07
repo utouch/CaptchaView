@@ -34,6 +34,5 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "这里不能输入 " + error, Toast.LENGTH_LONG).show();
             }
         });
-
     }
 }

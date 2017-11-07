@@ -140,7 +140,7 @@ public class CaptchaView extends RelativeLayout implements TextWatcher, InputEdi
                 if (mFocusBackground != -1 && mUnFocusBackground != -1 && mHasFocusBackground)
                     textView.setBackgroundResource(i != 0 ? mUnFocusBackground : mFocusBackground);
                 else
-                    textView.setBackgroundResource(mUnFocusBackground != -1 ? mUnFocusBackground : R.drawable.bg_edit_un_focus);
+                    textView.setBackgroundResource((mUnFocusBackground != -1) ? mUnFocusBackground : (R.drawable.bg_edit_un_focus));
                 textView.setGravity(Gravity.CENTER);
                 textView.setFocusable(false);
                 setTransformation(textView);
@@ -309,7 +309,8 @@ public class CaptchaView extends RelativeLayout implements TextWatcher, InputEdi
         for (int i = 0; i < mArrayTextView.length; i++) {
             TextView textView = mArrayTextView[i];
             textView.setText("");
-            textView.setBackgroundResource(i != 0 ? mUnFocusBackground : mFocusBackground);
+            if (mFocusBackground != -1 && mUnFocusBackground != -1 && mHasFocusBackground)
+                textView.setBackgroundResource(i != 0 ? mUnFocusBackground : mFocusBackground);
         }
     }
 
