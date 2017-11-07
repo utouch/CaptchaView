@@ -77,7 +77,7 @@ public class CaptchaView extends RelativeLayout implements TextWatcher, InputEdi
         mUnFocusBackground = a.getResourceId(R.styleable.CaptchaView_unFocusBackground, -1);
         int gravity = a.getInt(R.styleable.CaptchaView_android_gravity, -1);
         if (gravity != -1) setGravity(gravity);
-        mInputType = a.getInt(R.styleable.CaptchaView_inputType, -1);
+        mInputType = a.getInt(R.styleable.CaptchaView_inputMode, -1);
         if (mInputType != -1)
             setInputType(mInputType, null);
         mPasswordTransformation = a.getString(R.styleable.CaptchaView_passwordTransformation);

@@ -17,7 +17,7 @@
         <!--无焦点时输入框背景-->
         <attr name="unFocusBackground" format="reference"/>
         <attr name="passwordTransformation" format="string"/>
-        <attr name="inputType" format="enum">
+        <attr name="inputMode" format="enum">
             <enum name="number" value="0"/>
             <enum name="text" value="1"/>
             <enum name="numberText" value="2"/>

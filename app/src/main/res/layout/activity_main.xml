@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="inputType = number"
+            android:text="inputMode = number"
             android:textColor="@color/colorPrimary"
             android:textSize="20sp"/>
 
@@ -27,14 +27,14 @@
             lable:captchaHeight="56dp"
             lable:captchaWidth="56dp"
             lable:dividerWidth="5dp"
-            lable:inputType="number"
+            lable:inputMode="number"
             lable:number="4"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="inputType = numberPassword"
+            android:text="inputMode = numberPassword"
             android:textColor="@color/colorPrimary"
             android:textSize="20sp"/>
 
@@ -45,7 +45,7 @@
             lable:captchaHeight="56dp"
             lable:captchaWidth="56dp"
             lable:dividerWidth="25dp"
-            lable:inputType="number"
+            lable:inputMode="number"
             lable:number="4"
             lable:passwordTransformation="＊"/>
 
@@ -53,7 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="inputType = text"
+            android:text="inputMode = text"
             android:textColor="@color/colorPrimary"
             android:textSize="20sp"/>
 
@@ -68,7 +68,7 @@
             lable:dividerWidth="5dp"
             lable:focusBackground="@drawable/bg_edit_focus"
             lable:hasFocusBackground="true"
-            lable:inputType="text"
+            lable:inputMode="text"
             lable:number="4"
             lable:unFocusBackground="@drawable/bg_edit_un_focus"/>
 
@@ -76,7 +76,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="inputType = textPassword"
+            android:text="inputMode = textPassword"
             android:textColor="@color/colorPrimary"
             android:textSize="20sp"/>
 
@@ -91,7 +91,7 @@
             lable:dividerWidth="5dp"
             lable:focusBackground="@drawable/bg_edit_focus"
             lable:hasFocusBackground="true"
-            lable:inputType="text"
+            lable:inputMode="text"
             lable:number="5"
             lable:passwordTransformation="●"
             lable:unFocusBackground="@drawable/bg_edit_un_focus"/>
@@ -100,7 +100,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="inputType = numberNumber"
+            android:text="inputMode = numberNumber"
             android:textColor="@color/colorPrimary"
             android:textSize="20sp"/>
 
@@ -113,7 +113,7 @@
             lable:dividerWidth="5dp"
             lable:focusBackground="@drawable/bg_edit_focus"
             lable:hasFocusBackground="true"
-            lable:inputType="numberText"
+            lable:inputMode="numberText"
             lable:number="6"
             lable:unFocusBackground="@drawable/bg_edit_un_focus"/>
 
