@@ -1,18 +1,18 @@
 package com.captcha;
 
 import android.content.Context;
-import android.support.v7.widget.AppCompatEditText;
 import android.util.AttributeSet;
 import android.view.KeyEvent;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
 import android.view.inputmethod.InputConnectionWrapper;
+import android.widget.EditText;
 
 /**
  * @see <a href="http://stackoverflow.com/questions/4886858/android-edittext-deletebackspace-key-event">Stack
  * Overflow</a>
  */
-public class InputEditText extends AppCompatEditText {
+public class InputEditText extends EditText {
 
     private OnDelKeyEventListener delKeyEventListener;
 

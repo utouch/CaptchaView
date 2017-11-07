@@ -5,7 +5,6 @@ import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
-import android.support.v4.content.ContextCompat;
 import android.text.Editable;
 import android.text.InputFilter;
 import android.text.InputType;
@@ -64,7 +63,7 @@ public class CaptchaView extends RelativeLayout implements TextWatcher, InputEdi
         mNumber = a.getInt(R.styleable.CaptchaView_number, -1);
         mTextColor = a.getColorStateList(R.styleable.CaptchaView_android_textColor);
         if (mTextColor == null)
-            mTextColor = ColorStateList.valueOf(ContextCompat.getColor(context, android.R.color.primary_text_light));
+            mTextColor = ColorStateList.valueOf(getResources().getColor(android.R.color.primary_text_light));
         mTextSize = a.getDimensionPixelSize(R.styleable.CaptchaView_android_textSize, -1);
         if (mTextSize != -1)
             this.mTextSize = Util.px2sp(context, mTextSize);
@@ -100,7 +99,7 @@ public class CaptchaView extends RelativeLayout implements TextWatcher, InputEdi
         mInputEditText.setCursorVisible(false);
         mInputEditText.addTextChangedListener(this);
         mInputEditText.setOnDelKeyEventListener(this);
-        mInputEditText.setTextColor(ContextCompat.getColor(context, android.R.color.transparent));
+        mInputEditText.setTextColor(getResources().getColor(android.R.color.transparent));
         mInputEditText.setBackgroundResource(android.R.color.transparent);
         addView(mInputEditText);
     }
@@ -162,7 +161,9 @@ public class CaptchaView extends RelativeLayout implements TextWatcher, InputEdi
      * 设置输入类型
      *
      * @param inputType
+     *          InputType.TYPE_CLASS_NUMBER
      * @param digits
+     *          filter
      */
     public void setInputType(int inputType, final String digits) {
         switch (inputType) {
@@ -211,7 +212,7 @@ public class CaptchaView extends RelativeLayout implements TextWatcher, InputEdi
     /**
      * 设置间隔宽度
      *
-     * @param dividerWidth
+     * @param dividerWidth 间距
      */
     public void setDivideWidth(int dividerWidth) {
         mParentView.setDividerDrawable(createDivideShape(dividerWidth));
