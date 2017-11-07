@@ -5,8 +5,8 @@
         <attr name="number" format="integer"/>
         <attr name="android:textColor"/>
         <attr name="android:textSize"/>
-        <attr name="textWidth" format="dimension|reference"/>
-        <attr name="textHeight" format="dimension|reference"/>
+        <attr name="captchaWidth" format="dimension|reference"/>
+        <attr name="captchaHeight" format="dimension|reference"/>
         <attr name="android:gravity"/>
         <!--间隔-->
         <attr name="dividerWidth" format="dimension|reference"/>

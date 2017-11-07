@@ -69,8 +69,8 @@ public class CaptchaView extends RelativeLayout implements TextWatcher, InputEdi
             this.mTextSize = Util.px2sp(context, mTextSize);
 
         mHasFocusBackground = a.getBoolean(R.styleable.CaptchaView_hasFocusBackground, false);
-        mTextViewWidth = a.getDimensionPixelSize(R.styleable.CaptchaView_textWidth, -1);
-        mTextViewHeight = a.getDimensionPixelSize(R.styleable.CaptchaView_textHeight, -1);
+        mTextViewWidth = a.getDimensionPixelSize(R.styleable.CaptchaView_captchaWidth, -1);
+        mTextViewHeight = a.getDimensionPixelSize(R.styleable.CaptchaView_captchaHeight, -1);
         mDividerWidth = a.getDimensionPixelOffset(R.styleable.CaptchaView_dividerWidth, -1);
         if (mDividerWidth != -1) setDivideWidth(mDividerWidth);
         mFocusBackground = a.getResourceId(R.styleable.CaptchaView_focusBackground, -1);

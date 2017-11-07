@@ -20,15 +20,15 @@
             android:textColor="@color/colorPrimary"
             android:textSize="20sp"/>
 
-        <com.captcha.CaptchaView
+        <com.captchaa.CaptchaView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             lable:dividerWidth="5dp"
             lable:inputType="number"
             lable:number="4"
-            lable:textHeight="56dp"
-            lable:textWidth="56dp"/>
+            lable:captchaHeight="56dp"
+            lable:captchaWidth="56dp"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -38,7 +38,7 @@
             android:textColor="@color/colorPrimary"
             android:textSize="20sp"/>
 
-        <com.captcha.CaptchaView
+        <com.captchaa.CaptchaView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -46,8 +46,8 @@
             lable:inputType="number"
             lable:number="4"
             lable:passwordTransformation="＊"
-            lable:textHeight="56dp"
-            lable:textWidth="56dp"/>
+            lable:captchaHeight="56dp"
+            lable:captchaWidth="56dp"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -57,7 +57,7 @@
             android:textColor="@color/colorPrimary"
             android:textSize="20sp"/>
 
-        <com.captcha.CaptchaView
+        <com.captchaa.CaptchaView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -68,8 +68,8 @@
             lable:hasFocusBackground="true"
             lable:inputType="text"
             lable:number="4"
-            lable:textHeight="56dp"
-            lable:textWidth="56dp"
+            lable:captchaHeight="56dp"
+            lable:captchaWidth="56dp"
             lable:unFocusBackground="@drawable/bg_edit_un_focus"/>
 
         <TextView
@@ -80,7 +80,7 @@
             android:textColor="@color/colorPrimary"
             android:textSize="20sp"/>
 
-        <com.captcha.CaptchaView
+        <com.captchaa.CaptchaView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -92,8 +92,8 @@
             lable:inputType="text"
             lable:number="5"
             lable:passwordTransformation="●"
-            lable:textHeight="56dp"
-            lable:textWidth="56dp"
+            lable:captchaHeight="56dp"
+            lable:captchaWidth="56dp"
             lable:unFocusBackground="@drawable/bg_edit_un_focus"/>
 
         <TextView
@@ -104,7 +104,7 @@
             android:textColor="@color/colorPrimary"
             android:textSize="20sp"/>
 
-        <com.captcha.CaptchaView
+        <com.captchaa.CaptchaView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -113,8 +113,8 @@
             lable:hasFocusBackground="true"
             lable:inputType="numberText"
             lable:number="6"
-            lable:textHeight="56dp"
-            lable:textWidth="56dp"
+            lable:captchaHeight="56dp"
+            lable:captchaWidth="56dp"
             lable:unFocusBackground="@drawable/bg_edit_un_focus"/>
         <TextView
             android:layout_width="match_parent"
@@ -123,12 +123,12 @@
             android:text="只能输入*1234@"
             android:textColor="@color/colorPrimary"
             android:textSize="20sp"/>
-        <com.captcha.CaptchaView
+        <com.captchaa.CaptchaView
             android:id="@+id/captchaView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            lable:textHeight="56dp"
-            lable:textWidth="56dp"/>
+            lable:captchaHeight="56dp"
+            lable:captchaWidth="56dp"/>
     </LinearLayout>
 </ScrollView>
