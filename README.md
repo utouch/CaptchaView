@@ -5,7 +5,7 @@ CaptchaView是一个验证码、邀请码的自定义布局，是在 `InputCodeL
 
 效果预览
 ==========  
-![img](http://p.codekk.com/images/weixin-codekk-160.jpg)  
+![img](http://)  
 
 如何使用
 ==========  
